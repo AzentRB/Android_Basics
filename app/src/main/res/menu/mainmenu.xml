@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuOrientation"
+        android:title="Orientation"/>
+
+    <item
+        android:id="@+id/menuMediaPlayer"
+        android:title="Audio Video Control"/>
+
+    <item
+        android:id="@+id/menuLocalization"
+        android:title="Localization"/>
+
+    <item
+        android:id="@+id/menuSQLite"
+        android:title="SQLite"/>
+
+    <item
+        android:id="@+id/menuFileManagement"
+        android:title="File Management"/>
+
+    <item
+        android:id="@+id/menuTts"
+        android:title="Text-to-speech"/>
+
+
+</menu>
