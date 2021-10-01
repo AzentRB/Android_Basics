@@ -25,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+       Intent intent;
+        switch (item.getItemId()){
+            case R.id.menuOrientation:intent=new Intent(getApplicationContext(),Orientation.class);break;
+            case R.id.menuMediaPlayer:intent=new Intent(getApplicationContext(),MediaPlayer.class);break;
+            case R.id.menuLocalization:intent=new Intent(getApplicationContext(),Localization.class);break;
+            case R.id.menuSQLite:intent=new Intent(getApplicationContext(),SQLiteExample.class);break;
+            case R.id.menuFileManagement:intent=new Intent(getApplicationContext(), FileManagement.class);break;
+            case R.id.menuTts:intent=new Intent(getApplicationContext(),TextToSpeech.class);break;
+            default:
+                intent=new Intent(getApplicationContext(),MainActivity.class);
+        }
+        startActivity(intent);
         return true;
     }
 }
